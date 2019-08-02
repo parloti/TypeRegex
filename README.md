@@ -41,7 +41,7 @@ public class Program
 ## .NET Regular Expression Element Support
 
 ### Character Escapes
-[DOC](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-escapes-in-regular-expressions)
+[Official Documentation](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-escapes-in-regular-expressions)
 
 |Character or sequence|Description|TypeRegex|
 |-----------------|-----------------|-----------------|  
@@ -63,7 +63,30 @@ public class Program
 |`\`|Escapes the followed character.|`Pattern.Literal(char character)`|
 
 ### Character classes
-*Coming soon*
+[Official Documentation](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions)
+
+|Syntax|Description|TypeRegex|
+|-----------------|-----------------|-----------------|  
+|`[character_group]`|[Positive character group.](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#positive-character-group--)|`Pattern.AnyIn(string set, bool escape = true)`<br>`new PositiveCharacterGroup(string set, bool escape = true)`|
+|`[character_group]`||`Pattern.AnyIn(params char[] set)`<br>`new PositiveCharacterGroup(params char[] set)`|
+|`[firstCharacter-lastCharacter]`||`Pattern.Range(char first, char last, bool caseSensitive = true)`<br>`new PositiveCharacterGroup(char first, char last, bool caseSensitive = true)`|
+|`[firstCharacter-lastCharacter]`||`Pattern.Range(uint first, uint last)`<br>`new PositiveCharacterGroup(uint first, uint last)`|
+|`[^character_group]`|[Negative character group.](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)|`Pattern.AnyNotIn(string set, bool escape = true)`<br>`new NegativeCharacterGroup(string set, bool escape = true)`|
+|`[^character_group]`||`Pattern.AnyNotIn(params char[] set)`<br>`new NegativeCharacterGroup(params char[] set)`|
+|`[^firstCharacter-lastCharacter]`||`Pattern.NotInRange(char first, char last, bool caseSensitive = true)`<br>`new NegativeCharacterGroup(char first, char last, bool caseSensitive = true)`|
+|`[^firstCharacter-lastCharacter]`||`Pattern.NotInRange(uint first, uint last)`<br>`new NegativeCharacterGroup(uint first, uint last)`|
+|`.`|[Any character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)|`Pattern.Any()`<br>`new PositiveCharacterGroup()`|
+|`\p{name}`|[Unicode Category](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)|`Pattern.Add(UnicodeGroup{PositiveUnicodeCategory}.ToString())`<br>`Pattern.UnicodeGroup(UnicodeGroup{PositiveUnicodeCategory} group)`|
+|`\p{name}`|[Unicode Block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)|`Pattern.Add(UnicodeGroup{PositiveUnicodeBlock}.ToString())`<br>`Pattern.UnicodeGroup(UnicodeGroup{PositiveUnicodeBlock} group)`|
+|`\P{name}`|[Negative Unicode Category](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-unicode-category-or-unicode-block-p)|`Pattern.Add(UnicodeGroup{NegativeUnicodeCategory}.ToString())`<br>`Pattern.UnicodeGroup(UnicodeGroup{NegativeUnicodeCategory} group)`|
+|`\P{name}`|[Negative Unicode Block](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)|`Pattern.Add(UnicodeGroup{NegativeUnicodeBlock}.ToString())`<br>`Pattern.UnicodeGroup(UnicodeGroup{NegativeUnicodeBlock} group)`|
+|`\w`|[Word character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|`Pattern.Word(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptWord()`<br>`Pattern.UnicodeWord()`|
+|`\W`|[Non-word character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#non-word-character-w)|`Pattern.NonWord(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptNonWord()`<br>`Pattern.UnicodeNonWord()`|
+|`\s`|[Whitespace character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|`Pattern.WhiteSpace(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptWhiteSpace()`<br>`Pattern.UnicodeWhiteSpace()`|
+|`\S`|[Non-whitespace character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#non-whitespace-character-s)|`Pattern.NonWhiteSpace(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptNonWhiteSpace()`<br>`Pattern.UnicodeNonWhiteSpace()`|
+|`\d`|[Decimal digit character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|`Pattern.Digit(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptDigit()`<br>`Pattern.UnicodeDigit()`|
+|`\D`|[Non-digit character](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#non-digit-character-d)|`Pattern.NonDigit(MatchingBehavior matchingBehavior = MatchingBehavior.Default)`<br>`Pattern.ECMAScriptNonDigit()`<br>`Pattern.UnicodeNonDigit()`|
+|`[base_group - [excluded_group]]`|[Character class subtraction](https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#character-class-subtraction-base_group---excluded_group)|`Pattern.Subtraction(ISubtractable baseGroup, CharacterGroup excludedGroup)`|
 
 ### Anchors
 *Coming soon*
