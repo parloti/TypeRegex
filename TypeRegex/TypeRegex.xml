@@ -262,6 +262,762 @@
             <exception cref="T:System.ArgumentException"><paramref name="first"/> is greater as <paramref name="last"/>.</exception>
             <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="first"/> or <paramref name="last"/> are greater as 9.</exception>
         </member>
+        <member name="T:TypeRegex.IUnicodeBlock">
+            <summary>
+            Unicode named blocks values list.
+            </summary>
+            <remarks>
+            Based on: 
+            https://www.unicode.org/Public/UNIDATA/Blocks.txt, 
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.3#supported-named-blocks and 
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.8#supported-named-blocks.
+            Accessed in: 26/05/2019.
+            </remarks>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.BasicLatin">
+            <summary>
+            0000 - 007F. Value: "\p{IsBasicLatin}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Latin1Supplement">
+            <summary>
+            0080 - 00FF. Value: "\p{IsLatin-1Supplement}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedA">
+            <summary>
+            0100 - 017F. Value: "\p{IsLatinExtended-A}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedB">
+            <summary>
+            0180 - 024F. Value: "\p{IsLatinExtended-B}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.IPAExtensions">
+            <summary>
+            0250 - 02AF. Value: "\p{IsIPAExtensions}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SpacingModifierLetters">
+            <summary>
+            02B0 - 02FF. Value: "\p{IsSpacingModifierLetters}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CombiningDiacriticalMarks">
+            <summary>
+            0300 - 036F. Value: "\p{IsCombiningDiacriticalMarks}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.GreekandCoptic">
+            <summary>
+            0370 - 03FF. Value: "\p{IsGreek}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.IsGreekandCoptic">
+            <summary>
+            0370 - 03FF. Value: "\p{IsGreekandCoptic}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Cyrillic">
+            <summary>
+            0400 - 04FF. Value: "\p{IsCyrillic}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CyrillicSupplement">
+            <summary>
+            0500 - 052F. Value: "\p{IsCyrillicSupplement}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Armenian">
+            <summary>
+            0530 - 058F. Value: "\p{IsArmenian}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Hebrew">
+            <summary>
+            0590 - 05FF. Value: "\p{IsHebrew}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Arabic">
+            <summary>
+            0600 - 06FF. Value: "\p{IsArabic}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Syriac">
+            <summary>
+            0700 - 074F. Value: "\p{IsSyriac}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Thaana">
+            <summary>
+            0780 - 07BF. Value: "\p{IsThaana}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Devanagari">
+            <summary>
+            0900 - 097F. Value: "\p{IsDevanagari}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Bengali">
+            <summary>
+            0980 - 09FF. Value: "\p{IsBengali}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Gurmukhi">
+            <summary>
+            0A00 - 0A7F. Value: "\p{IsGurmukhi}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Gujarati">
+            <summary>
+            0A80 - 0AFF. Value: "\p{IsGujarati}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Oriya">
+            <summary>
+            0B00 - 0B7F. Value: "\p{IsOriya}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Tamil">
+            <summary>
+            0B80 - 0BFF. Value: "\p{IsTamil}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Telugu">
+            <summary>
+            0C00 - 0C7F. Value: "\p{IsTelugu}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Kannada">
+            <summary>
+            0C80 - 0CFF. Value: "\p{IsKannada}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Malayalam">
+            <summary>
+            0D00 - 0D7F. Value: "\p{IsMalayalam}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Sinhala">
+            <summary>
+            0D80 - 0DFF. Value: "\p{IsSinhala}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Thai">
+            <summary>
+            0E00 - 0E7F. Value: "\p{IsThai}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Lao">
+            <summary>
+            0E80 - 0EFF. Value: "\p{IsLao}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Tibetan">
+            <summary>
+            0F00 - 0FFF. Value: "\p{IsTibetan}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Myanmar">
+            <summary>
+            1000 - 109F. Value: "\p{IsMyanmar}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Georgian">
+            <summary>
+            10A0 - 10FF. Value: "\p{IsGeorgian}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HangulJamo">
+            <summary>
+            1100 - 11FF. Value: "\p{IsHangulJamo}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Ethiopic">
+            <summary>
+            1200 - 137F. Value: "\p{IsEthiopic}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Cherokee">
+            <summary>
+            13A0 - 13FF. Value: "\p{IsCherokee}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.UnifiedCanadianAboriginalSyllabics">
+            <summary>
+            1400 - 167F. Value: "\p{IsUnifiedCanadianAboriginalSyllabics}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Ogham">
+            <summary>
+            1680 - 169F. Value: "\p{IsOgham}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Runic">
+            <summary>
+            16A0 - 16FF. Value: "\p{IsRunic}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Tagalog">
+            <summary>
+            1700 - 171F. Value: "\p{IsTagalog}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Hanunoo">
+            <summary>
+            1720 - 173F. Value: "\p{IsHanunoo}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Buhid">
+            <summary>
+            1740 - 175F. Value: "\p{IsBuhid}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Tagbanwa">
+            <summary>
+            1760 - 177F. Value: "\p{IsTagbanwa}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Khmer">
+            <summary>
+            1780 - 17FF. Value: "\p{IsKhmer}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Mongolian">
+            <summary>
+            1800 - 18AF. Value: "\p{IsMongolian}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Limbu">
+            <summary>
+            1900 - 194F. Value: "\p{IsLimbu}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.TaiLe">
+            <summary>
+            1950 - 197F. Value: "\p{IsTaiLe}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.KhmerSymbols">
+            <summary>
+            19E0 - 19FF. Value: "\p{IsKhmerSymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.PhoneticExtensions">
+            <summary>
+            1D00 - 1D7F. Value: "\p{IsPhoneticExtensions}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedAdditional">
+            <summary>
+            1E00 - 1EFF. Value: "\p{IsLatinExtendedAdditional}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.GreekExtended">
+            <summary>
+            1F00 - 1FFF. Value: "\p{IsGreekExtended}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.GeneralPunctuation">
+            <summary>
+            2000 - 206F. Value: "\p{IsGeneralPunctuation}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SuperscriptsandSubscripts">
+            <summary>
+            2070 - 209F. Value: "\p{IsSuperscriptsandSubscripts}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CurrencySymbols">
+            <summary>
+            20A0 - 20CF. Value: "\p{IsCurrencySymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CombiningDiacriticalMarksforSymbols">
+            <summary>
+            20D0 - 20FF. Value: "\p{IsCombiningDiacriticalMarksforSymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.IsCombiningMarksforSymbols">
+            <summary>
+            20D0 - 20FF. Value: "\p{"IsCombiningMarksforSymbols"}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.LetterlikeSymbols">
+            <summary>
+            2100 - 214F. Value: "\p{IsLetterlikeSymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.NumberForms">
+            <summary>
+            2150 - 218F. Value: "\p{IsNumberForms}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Arrows">
+            <summary>
+            2190 - 21FF. Value: "\p{IsArrows}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MathematicalOperators">
+            <summary>
+            2200 - 22FF. Value: "\p{IsMathematicalOperators}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousTechnical">
+            <summary>
+            2300 - 23FF. Value: "\p{IsMiscellaneousTechnical}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.ControlPictures">
+            <summary>
+            2400 - 243F. Value: "\p{IsControlPictures}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.OpticalCharacterRecognition">
+            <summary>
+            2440 - 245F. Value: "\p{IsOpticalCharacterRecognition}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.EnclosedAlphanumerics">
+            <summary>
+            2460 - 24FF. Value: "\p{IsEnclosedAlphanumerics}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.BoxDrawing">
+            <summary>
+            2500 - 257F. Value: "\p{IsBoxDrawing}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.BlockElements">
+            <summary>
+            2580 - 259F. Value: "\p{IsBlockElements}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.GeometricShapes">
+            <summary>
+            25A0 - 25FF. Value: "\p{IsGeometricShapes}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousSymbols">
+            <summary>
+            2600 - 26FF. Value: "\p{IsMiscellaneousSymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Dingbats">
+            <summary>
+            2700 - 27BF. Value: "\p{IsDingbats}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousMathematicalSymbolsA">
+            <summary>
+            27C0 - 27EF. Value: "\p{IsMiscellaneousMathematicalSymbols-A}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SupplementalArrowsA">
+            <summary>
+            27F0 - 27FF. Value: "\p{IsSupplementalArrows-A}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.BraillePatterns">
+            <summary>
+            2800 - 28FF. Value: "\p{IsBraillePatterns}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SupplementalArrowsB">
+            <summary>
+            2900 - 297F. Value: "\p{IsSupplementalArrows-B}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousMathematicalSymbolsB">
+            <summary>
+            2980 - 29FF. Value: "\p{IsMiscellaneousMathematicalSymbols-B}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SupplementalMathematicalOperators">
+            <summary>
+            2A00 - 2AFF. Value: "\p{IsSupplementalMathematicalOperators}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousSymbolsandArrows">
+            <summary>
+            2B00 - 2BFF. Value: "\p{IsMiscellaneousSymbolsandArrows}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKRadicalsSupplement">
+            <summary>
+            2E80 - 2EFF. Value: "\p{IsCJKRadicalsSupplement}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.KangxiRadicals">
+            <summary>
+            2F00 - 2FDF. Value: "\p{IsKangxiRadicals}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.IdeographicDescriptionCharacters">
+            <summary>
+            2FF0 - 2FFF. Value: "\p{IsIdeographicDescriptionCharacters}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKSymbolsandPunctuation">
+            <summary>
+            3000 - 303F. Value: "\p{IsCJKSymbolsandPunctuation}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Hiragana">
+            <summary>
+            3040 - 309F. Value: "\p{IsHiragana}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Katakana">
+            <summary>
+            30A0 - 30FF. Value: "\p{IsKatakana}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Bopomofo">
+            <summary>
+            3100 - 312F. Value: "\p{IsBopomofo}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HangulCompatibilityJamo">
+            <summary>
+            3130 - 318F. Value: "\p{IsHangulCompatibilityJamo}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Kanbun">
+            <summary>
+            3190 - 319F. Value: "\p{IsKanbun}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.BopomofoExtended">
+            <summary>
+            31A0 - 31BF. Value: "\p{IsBopomofoExtended}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.KatakanaPhoneticExtensions">
+            <summary>
+            31F0 - 31FF. Value: "\p{IsKatakanaPhoneticExtensions}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.EnclosedCJKLettersandMonths">
+            <summary>
+            3200 - 32FF. Value: "\p{IsEnclosedCJKLettersandMonths}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibility">
+            <summary>
+            3300 - 33FF. Value: "\p{IsCJKCompatibility}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKUnifiedIdeographsExtensionA">
+            <summary>
+            3400 - 4DBF. Value: "\p{IsCJKUnifiedIdeographsExtensionA}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.YijingHexagramSymbols">
+            <summary>
+            4DC0 - 4DFF. Value: "\p{IsYijingHexagramSymbols}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKUnifiedIdeographs">
+            <summary>
+            4E00 - 9FFF. Value: "\p{IsCJKUnifiedIdeographs}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.YiSyllables">
+            <summary>
+            A000 - A48F. Value: "\p{IsYiSyllables}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.YiRadicals">
+            <summary>
+            A490 - A4CF. Value: "\p{IsYiRadicals}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HangulSyllables">
+            <summary>
+            AC00 - D7AF. Value: "\p{IsHangulSyllables}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HighSurrogates">
+            <summary>
+            D800 - DB7F. Value: "\p{IsHighSurrogates}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HighPrivateUseSurrogates">
+            <summary>
+            DB80 - DBFF. Value: "\p{IsHighPrivateUseSurrogates}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.LowSurrogates">
+            <summary>
+            DC00 - DFFF. Value: "\p{IsLowSurrogates}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.PrivateUse">
+            <summary>
+            E000 - F8FF. Value: "\p{IsPrivateUse}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.PrivateUseArea">
+            <summary>
+            E000 - F8FF. Value: "\p{IsPrivateUseArea}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibilityIdeographs">
+            <summary>
+            F900 - FAFF. Value: "\p{IsCJKCompatibilityIdeographs}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.AlphabeticPresentationForms">
+            <summary>
+            FB00 - FB4F. Value: "\p{IsAlphabeticPresentationForms}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.ArabicPresentationFormsA">
+            <summary>
+            FB50 - FDFF. Value: "\p{IsArabicPresentationForms-A}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.VariationSelectors">
+            <summary>
+            FE00 - FE0F. Value: "\p{IsVariationSelectors}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CombiningHalfMarks">
+            <summary>
+            FE20 - FE2F. Value: "\p{IsCombiningHalfMarks}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibilityForms">
+            <summary>
+            FE30 - FE4F. Value: "\p{IsCJKCompatibilityForms}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.SmallFormVariants">
+            <summary>
+            FE50 - FE6F. Value: "\p{IsSmallFormVariants}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.ArabicPresentationFormsB">
+            <summary>
+            FE70 - FEFF. Value: "\p{IsArabicPresentationForms-B}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.HalfwidthandFullwidthForms">
+            <summary>
+            FF00 - FFEF. Value: "\p{IsHalfwidthandFullwidthForms}".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeBlock.Specials">
+            <summary>
+            FFF0 - FFFF. Value: "\p{IsSpecials}".
+            </summary>
+        </member>
+        <member name="T:TypeRegex.IUnicodeCategory">
+            <summary>
+            Unicode general categories values list.
+            </summary>
+            <remarks>
+            Based on: 
+            https://www.unicode.org/reports/tr44/#General_Category_Values, 
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.3#SupportedUnicodeGeneralCategories and 
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.8#SupportedUnicodeGeneralCategories.
+            Accessed in: 26/05/2019.
+            </remarks>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.UppercaseLetter">
+            <summary>
+            An uppercase letter. Value: "Lu".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.LowercaseLetter">
+            <summary>
+            A lowercase letter. Value : "Ll".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.TitlecaseLetter">
+            <summary>
+            A digraphic character, with first part uppercase. Value: "Lt"
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.ModifierLetter">
+            <summary>
+            A modifier letter. Value: "Lm".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.OtherLetter">
+            <summary>
+            Other letters, including syllables and ideographs. Value: "Lo".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Letter">
+            <summary>
+            All letter characters. Value: "L" ("Lu | Ll | Lt | Lm | Lo").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.UppercaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.LowercaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.TitlecaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.ModifierLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherLetter"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.NonspacingMark">
+            <summary>
+             A nonspacing combining mark (zero advance width). Value: "Mn".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.SpacingMark">
+            <summary>
+            A spacing combining mark (positive advance width). Value: "Mc".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.EnclosingMark">
+            <summary>
+            An enclosing combining mark. Value: "Me".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Mark">
+            <summary>
+            All diacritic marks. Value: "M" ("Mn | Mc | Me").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.NonspacingMark"/> | <see cref="P:TypeRegex.IUnicodeCategory.SpacingMark"/> | <see cref="P:TypeRegex.IUnicodeCategory.EnclosingMark"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.DecimalNumber">
+            <summary>
+            A decimal digit. Value: "Nd".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.LetterNumber">
+            <summary>
+            A letterlike numeric character. Value: "Nl".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.OtherNumber">
+            <summary>
+            A numeric character of other type. Value: "No".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Number">
+            <summary>
+            All numbers. Value: "N" ("Nd | Nl | No").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.DecimalNumber"/> | <see cref="P:TypeRegex.IUnicodeCategory.LetterNumber"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherNumber"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.ConnectorPunctuation">
+            <summary>
+            A connecting punctuation mark, like a tie. Value: "Pc".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.DashPunctuation">
+            <summary>
+            A dash or hyphen punctuation mark. Value: "Pd".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.OpenPunctuation">
+            <summary>
+            An opening punctuation mark(of a pair). Value: "Ps".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.ClosePunctuation">
+            <summary>
+            A closing punctuation mark(of a pair). Value: "Pe".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.InitialPunctuation">
+            <summary>
+            An initial quotation mark. Value: "Pi".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.FinalPunctuation">
+            <summary>
+            A final quotation mark. Value: "Pf"
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.OtherPunctuation">
+            <summary>
+            A punctuation mark of other type. Value: "Po"
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Punctuation">
+            <summary>
+            All punctuation characters. Value : "P" ("Pc | Pd | Ps | Pe | Pi | Pf | Po").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.ConnectorPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.DashPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.OpenPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.ClosePunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.InitialPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.FinalPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherPunctuation"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.MathSymbol">
+            <summary>
+            A symbol of mathematical use. Value: "Sm".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.CurrencySymbol">
+            <summary>
+            A currency sign. Value: "Sc".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.ModifierSymbol">
+            <summary>
+            A non-letterlike modifier symbol. Value: "Sk".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.OtherSymbol">
+            <summary>
+            A symbol of other type. Value: "So".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Symbol">
+            <summary>
+            All symbols. Value: "S" ("Sm | Sc | Sk | So").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.MathSymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.CurrencySymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.ModifierSymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherSymbol"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.SpaceSeparator">
+            <summary>
+            A space character(of various non-zero widths). Value: "Zs".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.LineSeparator">
+            <summary>
+            U+2028 LINE SEPARATOR only. Value: "Zl".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.ParagraphSeparator">
+            <summary>
+            U+2029 PARAGRAPH SEPARATOR only. Value: "Zp".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Separator">
+            <summary>
+            All separator characters. Value: "Z" ("Zs | Zl | Zp").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.SpaceSeparator"/> | <see cref="P:TypeRegex.IUnicodeCategory.LineSeparator"/> | <see cref="P:TypeRegex.IUnicodeCategory.ParagraphSeparator"/>.</para>
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Control">
+            <summary>
+            A C0 or C1 control code. Value: "Cc".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Format">
+            <summary>
+            A format control character. Value: "Cf".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Surrogate">
+            <summary>
+            A surrogate code point. Value: "Cs".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.PrivateUse">
+            <summary>
+            A private-use character. Value: "Co".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Unassigned">
+            <summary>
+            A reserved unassigned code point or a noncharacter. Value: "Cn".
+            </summary>
+        </member>
+        <member name="P:TypeRegex.IUnicodeCategory.Other">
+            <summary>
+            All control characters. Value "C" ("Cc | Cf | Cs | Co | Cn").
+            <para><see cref="P:TypeRegex.IUnicodeCategory.Control"/> | <see cref="P:TypeRegex.IUnicodeCategory.Format"/> | <see cref="P:TypeRegex.IUnicodeCategory.Surrogate"/> | <see cref="P:TypeRegex.IUnicodeCategory.PrivateUse"/> | <see cref="P:TypeRegex.IUnicodeCategory.Unassigned"/>.</para>
+            </summary>
+        </member>
         <member name="T:TypeRegex.NegativeCharacterGroup">
             <summary>
             A negative character group specifies a list of characters that must not appear in an input string for a match to occur.
@@ -1931,6 +2687,35 @@
             <exception cref="T:System.ArgumentNullException"><paramref name="name"/> is <see langword="null"/></exception>
             <exception cref="T:System.ArgumentException"><paramref name="name"/> is <see cref="F:System.String.Empty"/> or consists only of white-space characters.</exception>
         </member>
+        <member name="T:TypeRegex.UnicodeGroup">
+            <summary>
+            Unicode named groups base class.
+            </summary>
+        </member>
+        <member name="P:TypeRegex.UnicodeGroup.CompositeFormat">
+            <summary>
+            The regular expression format.
+            </summary>
+        </member>
+        <member name="M:TypeRegex.UnicodeGroup.ToString">
+            <summary>
+            Converts this instance to a regular expression pattern that can be passed to a <see cref="T:System.Text.RegularExpressions.Regex"/> constructor.
+            </summary>
+            <returns>A regular expression character class.</returns>
+        </member>
+        <member name="P:TypeRegex.UnicodeGroup.Name">
+            <summary>
+            The group name.
+            </summary>
+        </member>
+        <member name="M:TypeRegex.UnicodeGroup.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TypeRegex.UnicodeGroup"/> class.
+            </summary>
+            <param name="name">The block name.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="name"/> is <see langword="null"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="name"/> is <see cref="F:System.String.Empty"/> or consists only of white-space characters.</exception>
+        </member>
         <member name="T:TypeRegex.Escapes">
             <summary>
             List of constant character escapes supported by regular expressions in .NET.
@@ -2016,762 +2801,6 @@
         <member name="P:TypeRegex.ISubtractable.Set">
             <summary>
             Set of characters to be used in subtraction.
-            </summary>
-        </member>
-        <member name="T:TypeRegex.IUnicodeBlock">
-            <summary>
-            Unicode named blocks values list.
-            </summary>
-            <remarks>
-            Based on: 
-            https://www.unicode.org/Public/UNIDATA/Blocks.txt, 
-            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.3#supported-named-blocks and 
-            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.8#supported-named-blocks.
-            Accessed in: 26/05/2019.
-            </remarks>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.BasicLatin">
-            <summary>
-            0000 - 007F. Value: "\p{IsBasicLatin}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Latin1Supplement">
-            <summary>
-            0080 - 00FF. Value: "\p{IsLatin-1Supplement}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedA">
-            <summary>
-            0100 - 017F. Value: "\p{IsLatinExtended-A}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedB">
-            <summary>
-            0180 - 024F. Value: "\p{IsLatinExtended-B}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.IPAExtensions">
-            <summary>
-            0250 - 02AF. Value: "\p{IsIPAExtensions}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SpacingModifierLetters">
-            <summary>
-            02B0 - 02FF. Value: "\p{IsSpacingModifierLetters}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CombiningDiacriticalMarks">
-            <summary>
-            0300 - 036F. Value: "\p{IsCombiningDiacriticalMarks}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.GreekandCoptic">
-            <summary>
-            0370 - 03FF. Value: "\p{IsGreek}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.IsGreekandCoptic">
-            <summary>
-            0370 - 03FF. Value: "\p{IsGreekandCoptic}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Cyrillic">
-            <summary>
-            0400 - 04FF. Value: "\p{IsCyrillic}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CyrillicSupplement">
-            <summary>
-            0500 - 052F. Value: "\p{IsCyrillicSupplement}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Armenian">
-            <summary>
-            0530 - 058F. Value: "\p{IsArmenian}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Hebrew">
-            <summary>
-            0590 - 05FF. Value: "\p{IsHebrew}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Arabic">
-            <summary>
-            0600 - 06FF. Value: "\p{IsArabic}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Syriac">
-            <summary>
-            0700 - 074F. Value: "\p{IsSyriac}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Thaana">
-            <summary>
-            0780 - 07BF. Value: "\p{IsThaana}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Devanagari">
-            <summary>
-            0900 - 097F. Value: "\p{IsDevanagari}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Bengali">
-            <summary>
-            0980 - 09FF. Value: "\p{IsBengali}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Gurmukhi">
-            <summary>
-            0A00 - 0A7F. Value: "\p{IsGurmukhi}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Gujarati">
-            <summary>
-            0A80 - 0AFF. Value: "\p{IsGujarati}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Oriya">
-            <summary>
-            0B00 - 0B7F. Value: "\p{IsOriya}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Tamil">
-            <summary>
-            0B80 - 0BFF. Value: "\p{IsTamil}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Telugu">
-            <summary>
-            0C00 - 0C7F. Value: "\p{IsTelugu}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Kannada">
-            <summary>
-            0C80 - 0CFF. Value: "\p{IsKannada}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Malayalam">
-            <summary>
-            0D00 - 0D7F. Value: "\p{IsMalayalam}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Sinhala">
-            <summary>
-            0D80 - 0DFF. Value: "\p{IsSinhala}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Thai">
-            <summary>
-            0E00 - 0E7F. Value: "\p{IsThai}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Lao">
-            <summary>
-            0E80 - 0EFF. Value: "\p{IsLao}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Tibetan">
-            <summary>
-            0F00 - 0FFF. Value: "\p{IsTibetan}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Myanmar">
-            <summary>
-            1000 - 109F. Value: "\p{IsMyanmar}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Georgian">
-            <summary>
-            10A0 - 10FF. Value: "\p{IsGeorgian}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HangulJamo">
-            <summary>
-            1100 - 11FF. Value: "\p{IsHangulJamo}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Ethiopic">
-            <summary>
-            1200 - 137F. Value: "\p{IsEthiopic}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Cherokee">
-            <summary>
-            13A0 - 13FF. Value: "\p{IsCherokee}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.UnifiedCanadianAboriginalSyllabics">
-            <summary>
-            1400 - 167F. Value: "\p{IsUnifiedCanadianAboriginalSyllabics}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Ogham">
-            <summary>
-            1680 - 169F. Value: "\p{IsOgham}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Runic">
-            <summary>
-            16A0 - 16FF. Value: "\p{IsRunic}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Tagalog">
-            <summary>
-            1700 - 171F. Value: "\p{IsTagalog}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Hanunoo">
-            <summary>
-            1720 - 173F. Value: "\p{IsHanunoo}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Buhid">
-            <summary>
-            1740 - 175F. Value: "\p{IsBuhid}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Tagbanwa">
-            <summary>
-            1760 - 177F. Value: "\p{IsTagbanwa}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Khmer">
-            <summary>
-            1780 - 17FF. Value: "\p{IsKhmer}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Mongolian">
-            <summary>
-            1800 - 18AF. Value: "\p{IsMongolian}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Limbu">
-            <summary>
-            1900 - 194F. Value: "\p{IsLimbu}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.TaiLe">
-            <summary>
-            1950 - 197F. Value: "\p{IsTaiLe}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.KhmerSymbols">
-            <summary>
-            19E0 - 19FF. Value: "\p{IsKhmerSymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.PhoneticExtensions">
-            <summary>
-            1D00 - 1D7F. Value: "\p{IsPhoneticExtensions}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.LatinExtendedAdditional">
-            <summary>
-            1E00 - 1EFF. Value: "\p{IsLatinExtendedAdditional}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.GreekExtended">
-            <summary>
-            1F00 - 1FFF. Value: "\p{IsGreekExtended}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.GeneralPunctuation">
-            <summary>
-            2000 - 206F. Value: "\p{IsGeneralPunctuation}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SuperscriptsandSubscripts">
-            <summary>
-            2070 - 209F. Value: "\p{IsSuperscriptsandSubscripts}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CurrencySymbols">
-            <summary>
-            20A0 - 20CF. Value: "\p{IsCurrencySymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CombiningDiacriticalMarksforSymbols">
-            <summary>
-            20D0 - 20FF. Value: "\p{IsCombiningDiacriticalMarksforSymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.IsCombiningMarksforSymbols">
-            <summary>
-            20D0 - 20FF. Value: "\p{"IsCombiningMarksforSymbols"}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.LetterlikeSymbols">
-            <summary>
-            2100 - 214F. Value: "\p{IsLetterlikeSymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.NumberForms">
-            <summary>
-            2150 - 218F. Value: "\p{IsNumberForms}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Arrows">
-            <summary>
-            2190 - 21FF. Value: "\p{IsArrows}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MathematicalOperators">
-            <summary>
-            2200 - 22FF. Value: "\p{IsMathematicalOperators}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousTechnical">
-            <summary>
-            2300 - 23FF. Value: "\p{IsMiscellaneousTechnical}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.ControlPictures">
-            <summary>
-            2400 - 243F. Value: "\p{IsControlPictures}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.OpticalCharacterRecognition">
-            <summary>
-            2440 - 245F. Value: "\p{IsOpticalCharacterRecognition}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.EnclosedAlphanumerics">
-            <summary>
-            2460 - 24FF. Value: "\p{IsEnclosedAlphanumerics}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.BoxDrawing">
-            <summary>
-            2500 - 257F. Value: "\p{IsBoxDrawing}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.BlockElements">
-            <summary>
-            2580 - 259F. Value: "\p{IsBlockElements}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.GeometricShapes">
-            <summary>
-            25A0 - 25FF. Value: "\p{IsGeometricShapes}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousSymbols">
-            <summary>
-            2600 - 26FF. Value: "\p{IsMiscellaneousSymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Dingbats">
-            <summary>
-            2700 - 27BF. Value: "\p{IsDingbats}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousMathematicalSymbolsA">
-            <summary>
-            27C0 - 27EF. Value: "\p{IsMiscellaneousMathematicalSymbols-A}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SupplementalArrowsA">
-            <summary>
-            27F0 - 27FF. Value: "\p{IsSupplementalArrows-A}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.BraillePatterns">
-            <summary>
-            2800 - 28FF. Value: "\p{IsBraillePatterns}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SupplementalArrowsB">
-            <summary>
-            2900 - 297F. Value: "\p{IsSupplementalArrows-B}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousMathematicalSymbolsB">
-            <summary>
-            2980 - 29FF. Value: "\p{IsMiscellaneousMathematicalSymbols-B}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SupplementalMathematicalOperators">
-            <summary>
-            2A00 - 2AFF. Value: "\p{IsSupplementalMathematicalOperators}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.MiscellaneousSymbolsandArrows">
-            <summary>
-            2B00 - 2BFF. Value: "\p{IsMiscellaneousSymbolsandArrows}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKRadicalsSupplement">
-            <summary>
-            2E80 - 2EFF. Value: "\p{IsCJKRadicalsSupplement}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.KangxiRadicals">
-            <summary>
-            2F00 - 2FDF. Value: "\p{IsKangxiRadicals}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.IdeographicDescriptionCharacters">
-            <summary>
-            2FF0 - 2FFF. Value: "\p{IsIdeographicDescriptionCharacters}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKSymbolsandPunctuation">
-            <summary>
-            3000 - 303F. Value: "\p{IsCJKSymbolsandPunctuation}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Hiragana">
-            <summary>
-            3040 - 309F. Value: "\p{IsHiragana}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Katakana">
-            <summary>
-            30A0 - 30FF. Value: "\p{IsKatakana}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Bopomofo">
-            <summary>
-            3100 - 312F. Value: "\p{IsBopomofo}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HangulCompatibilityJamo">
-            <summary>
-            3130 - 318F. Value: "\p{IsHangulCompatibilityJamo}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Kanbun">
-            <summary>
-            3190 - 319F. Value: "\p{IsKanbun}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.BopomofoExtended">
-            <summary>
-            31A0 - 31BF. Value: "\p{IsBopomofoExtended}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.KatakanaPhoneticExtensions">
-            <summary>
-            31F0 - 31FF. Value: "\p{IsKatakanaPhoneticExtensions}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.EnclosedCJKLettersandMonths">
-            <summary>
-            3200 - 32FF. Value: "\p{IsEnclosedCJKLettersandMonths}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibility">
-            <summary>
-            3300 - 33FF. Value: "\p{IsCJKCompatibility}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKUnifiedIdeographsExtensionA">
-            <summary>
-            3400 - 4DBF. Value: "\p{IsCJKUnifiedIdeographsExtensionA}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.YijingHexagramSymbols">
-            <summary>
-            4DC0 - 4DFF. Value: "\p{IsYijingHexagramSymbols}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKUnifiedIdeographs">
-            <summary>
-            4E00 - 9FFF. Value: "\p{IsCJKUnifiedIdeographs}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.YiSyllables">
-            <summary>
-            A000 - A48F. Value: "\p{IsYiSyllables}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.YiRadicals">
-            <summary>
-            A490 - A4CF. Value: "\p{IsYiRadicals}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HangulSyllables">
-            <summary>
-            AC00 - D7AF. Value: "\p{IsHangulSyllables}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HighSurrogates">
-            <summary>
-            D800 - DB7F. Value: "\p{IsHighSurrogates}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HighPrivateUseSurrogates">
-            <summary>
-            DB80 - DBFF. Value: "\p{IsHighPrivateUseSurrogates}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.LowSurrogates">
-            <summary>
-            DC00 - DFFF. Value: "\p{IsLowSurrogates}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.PrivateUse">
-            <summary>
-            E000 - F8FF. Value: "\p{IsPrivateUse}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.PrivateUseArea">
-            <summary>
-            E000 - F8FF. Value: "\p{IsPrivateUseArea}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibilityIdeographs">
-            <summary>
-            F900 - FAFF. Value: "\p{IsCJKCompatibilityIdeographs}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.AlphabeticPresentationForms">
-            <summary>
-            FB00 - FB4F. Value: "\p{IsAlphabeticPresentationForms}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.ArabicPresentationFormsA">
-            <summary>
-            FB50 - FDFF. Value: "\p{IsArabicPresentationForms-A}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.VariationSelectors">
-            <summary>
-            FE00 - FE0F. Value: "\p{IsVariationSelectors}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CombiningHalfMarks">
-            <summary>
-            FE20 - FE2F. Value: "\p{IsCombiningHalfMarks}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.CJKCompatibilityForms">
-            <summary>
-            FE30 - FE4F. Value: "\p{IsCJKCompatibilityForms}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.SmallFormVariants">
-            <summary>
-            FE50 - FE6F. Value: "\p{IsSmallFormVariants}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.ArabicPresentationFormsB">
-            <summary>
-            FE70 - FEFF. Value: "\p{IsArabicPresentationForms-B}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.HalfwidthandFullwidthForms">
-            <summary>
-            FF00 - FFEF. Value: "\p{IsHalfwidthandFullwidthForms}".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeBlock.Specials">
-            <summary>
-            FFF0 - FFFF. Value: "\p{IsSpecials}".
-            </summary>
-        </member>
-        <member name="T:TypeRegex.IUnicodeCategory">
-            <summary>
-            Unicode general categories values list.
-            </summary>
-            <remarks>
-            Based on: 
-            https://www.unicode.org/reports/tr44/#General_Category_Values, 
-            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.3#SupportedUnicodeGeneralCategories and 
-            https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions?view=netframework-4.8#SupportedUnicodeGeneralCategories.
-            Accessed in: 26/05/2019.
-            </remarks>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.UppercaseLetter">
-            <summary>
-            An uppercase letter. Value: "Lu".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.LowercaseLetter">
-            <summary>
-            A lowercase letter. Value : "Ll".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.TitlecaseLetter">
-            <summary>
-            A digraphic character, with first part uppercase. Value: "Lt"
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.ModifierLetter">
-            <summary>
-            A modifier letter. Value: "Lm".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.OtherLetter">
-            <summary>
-            Other letters, including syllables and ideographs. Value: "Lo".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Letter">
-            <summary>
-            All letter characters. Value: "L" ("Lu | Ll | Lt | Lm | Lo").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.UppercaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.LowercaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.TitlecaseLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.ModifierLetter"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherLetter"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.NonspacingMark">
-            <summary>
-             A nonspacing combining mark (zero advance width). Value: "Mn".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.SpacingMark">
-            <summary>
-            A spacing combining mark (positive advance width). Value: "Mc".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.EnclosingMark">
-            <summary>
-            An enclosing combining mark. Value: "Me".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Mark">
-            <summary>
-            All diacritic marks. Value: "M" ("Mn | Mc | Me").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.NonspacingMark"/> | <see cref="P:TypeRegex.IUnicodeCategory.SpacingMark"/> | <see cref="P:TypeRegex.IUnicodeCategory.EnclosingMark"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.DecimalNumber">
-            <summary>
-            A decimal digit. Value: "Nd".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.LetterNumber">
-            <summary>
-            A letterlike numeric character. Value: "Nl".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.OtherNumber">
-            <summary>
-            A numeric character of other type. Value: "No".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Number">
-            <summary>
-            All numbers. Value: "N" ("Nd | Nl | No").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.DecimalNumber"/> | <see cref="P:TypeRegex.IUnicodeCategory.LetterNumber"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherNumber"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.ConnectorPunctuation">
-            <summary>
-            A connecting punctuation mark, like a tie. Value: "Pc".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.DashPunctuation">
-            <summary>
-            A dash or hyphen punctuation mark. Value: "Pd".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.OpenPunctuation">
-            <summary>
-            An opening punctuation mark(of a pair). Value: "Ps".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.ClosePunctuation">
-            <summary>
-            A closing punctuation mark(of a pair). Value: "Pe".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.InitialPunctuation">
-            <summary>
-            An initial quotation mark. Value: "Pi".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.FinalPunctuation">
-            <summary>
-            A final quotation mark. Value: "Pf"
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.OtherPunctuation">
-            <summary>
-            A punctuation mark of other type. Value: "Po"
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Punctuation">
-            <summary>
-            All punctuation characters. Value : "P" ("Pc | Pd | Ps | Pe | Pi | Pf | Po").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.ConnectorPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.DashPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.OpenPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.ClosePunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.InitialPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.FinalPunctuation"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherPunctuation"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.MathSymbol">
-            <summary>
-            A symbol of mathematical use. Value: "Sm".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.CurrencySymbol">
-            <summary>
-            A currency sign. Value: "Sc".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.ModifierSymbol">
-            <summary>
-            A non-letterlike modifier symbol. Value: "Sk".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.OtherSymbol">
-            <summary>
-            A symbol of other type. Value: "So".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Symbol">
-            <summary>
-            All symbols. Value: "S" ("Sm | Sc | Sk | So").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.MathSymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.CurrencySymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.ModifierSymbol"/> | <see cref="P:TypeRegex.IUnicodeCategory.OtherSymbol"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.SpaceSeparator">
-            <summary>
-            A space character(of various non-zero widths). Value: "Zs".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.LineSeparator">
-            <summary>
-            U+2028 LINE SEPARATOR only. Value: "Zl".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.ParagraphSeparator">
-            <summary>
-            U+2029 PARAGRAPH SEPARATOR only. Value: "Zp".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Separator">
-            <summary>
-            All separator characters. Value: "Z" ("Zs | Zl | Zp").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.SpaceSeparator"/> | <see cref="P:TypeRegex.IUnicodeCategory.LineSeparator"/> | <see cref="P:TypeRegex.IUnicodeCategory.ParagraphSeparator"/>.</para>
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Control">
-            <summary>
-            A C0 or C1 control code. Value: "Cc".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Format">
-            <summary>
-            A format control character. Value: "Cf".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Surrogate">
-            <summary>
-            A surrogate code point. Value: "Cs".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.PrivateUse">
-            <summary>
-            A private-use character. Value: "Co".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Unassigned">
-            <summary>
-            A reserved unassigned code point or a noncharacter. Value: "Cn".
-            </summary>
-        </member>
-        <member name="P:TypeRegex.IUnicodeCategory.Other">
-            <summary>
-            All control characters. Value "C" ("Cc | Cf | Cs | Co | Cn").
-            <para><see cref="P:TypeRegex.IUnicodeCategory.Control"/> | <see cref="P:TypeRegex.IUnicodeCategory.Format"/> | <see cref="P:TypeRegex.IUnicodeCategory.Surrogate"/> | <see cref="P:TypeRegex.IUnicodeCategory.PrivateUse"/> | <see cref="P:TypeRegex.IUnicodeCategory.Unassigned"/>.</para>
             </summary>
         </member>
         <member name="T:TypeRegex.MatchingBehavior">
@@ -2962,6 +2991,13 @@
             <exception cref="T:System.ArgumentNullException"><paramref name="term"/> is <see langword="null"/></exception>
             <returns>Current instance of <see cref="T:TypeRegex.Pattern"/>.</returns>
         </member>
+        <member name="M:TypeRegex.Pattern.UnicodeGroup(TypeRegex.UnicodeGroup)">
+            <summary>
+            Matches any single character in the Unicode general category/Block specified by <paramref name="group"/>.
+            </summary>
+            <param name="group">The Unicode general category, <see cref="T:TypeRegex.IUnicodeCategory"/>) or block <see cref="T:TypeRegex.IUnicodeBlock"/> .</param>
+            <returns>Current instance of <see cref="T:TypeRegex.Pattern"/>.</returns>
+        </member>
         <member name="M:TypeRegex.Pattern.Word(TypeRegex.MatchingBehavior)">
             <summary>
             Matches any word character.
@@ -3094,6 +3130,14 @@
             Matches any character other than a decimal digit.
             Pattern: "\P{Nd}".
             </summary>
+            <returns>Current instance of <see cref="T:TypeRegex.Pattern"/>.</returns>
+        </member>
+        <member name="M:TypeRegex.Pattern.Subtraction(TypeRegex.ISubtractable,TypeRegex.CharacterGroup)">
+            <summary>
+            Character class subtraction yields a set of characters that is the result of excluding the characters in one character class from another character class.
+            </summary>
+            <param name="baseGroup"></param>
+            <param name="excludedGroup"></param>
             <returns>Current instance of <see cref="T:TypeRegex.Pattern"/>.</returns>
         </member>
         <member name="M:TypeRegex.Pattern.Subtraction(TypeRegex.CharacterGroup,TypeRegex.CharacterGroup)">
@@ -3297,35 +3341,6 @@
             Converts this instance to a regular expression pattern that can be passed to a <see cref="T:System.Text.RegularExpressions.Regex"/> constructor.
             </summary>
             <returns>A regular expression pattern.</returns>
-        </member>
-        <member name="T:TypeRegex.UnicodeGroup">
-            <summary>
-            Unicode named groups base class.
-            </summary>
-        </member>
-        <member name="P:TypeRegex.UnicodeGroup.CompositeFormat">
-            <summary>
-            The regular expression format.
-            </summary>
-        </member>
-        <member name="M:TypeRegex.UnicodeGroup.ToString">
-            <summary>
-            Converts this instance to a regular expression pattern that can be passed to a <see cref="T:System.Text.RegularExpressions.Regex"/> constructor.
-            </summary>
-            <returns>A regular expression character class.</returns>
-        </member>
-        <member name="P:TypeRegex.UnicodeGroup.Name">
-            <summary>
-            The group name.
-            </summary>
-        </member>
-        <member name="M:TypeRegex.UnicodeGroup.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:TypeRegex.UnicodeGroup"/> class.
-            </summary>
-            <param name="name">The block name.</param>
-            <exception cref="T:System.ArgumentNullException"><paramref name="name"/> is <see langword="null"/></exception>
-            <exception cref="T:System.ArgumentException"><paramref name="name"/> is <see cref="F:System.String.Empty"/> or consists only of white-space characters.</exception>
         </member>
     </members>
 </doc>

@@ -159,6 +159,7 @@ namespace TypeRegex
         /// <param name="term">The Unicode general category, <see cref="TypeRegex.IUnicodeCategory"/>).</param>
         /// <exception cref="ArgumentNullException"><paramref name="term"/> is <see langword="null"/></exception>
         /// <returns>Current instance of <see cref="Pattern"/>.</returns>
+        [Obsolete("This method is obsolete. And it will be removed in future versions.")]
         public Pattern Add(Stringable term)
         {
             if (term is null)
@@ -166,6 +167,19 @@ namespace TypeRegex
                 throw new ArgumentNullException(nameof(term));
             }
             return Add(term.ToString(), false);
+        }
+
+        /// <summary>
+        /// Matches any single character in the Unicode general category/Block specified by <paramref name="group"/>.
+        /// </summary>
+        /// <param name="group">The Unicode general category, <see cref="IUnicodeCategory"/>) or block <see cref="IUnicodeBlock"/> .</param>
+        /// <returns>Current instance of <see cref="Pattern"/>.</returns>
+        public Pattern UnicodeGroup(UnicodeGroup group){
+            if (group is null)
+            {
+                throw new ArgumentNullException(nameof(group));
+            }
+            return Add(group.ToString(), false);
         }
 
         #region Word
@@ -476,6 +490,21 @@ namespace TypeRegex
         /// <param name="baseGroup"></param>
         /// <param name="excludedGroup"></param>
         /// <returns>Current instance of <see cref="Pattern"/>.</returns>
+        [Obsolete("This method is obsolete. And it will be removed in future versions.")]
+        public Pattern Subtraction(ISubtractable baseGroup, CharacterGroup excludedGroup)
+        {
+            //subtractable
+            Add("[" + baseGroup.Set + "-" + excludedGroup.ToString() + "]", false);
+            return this;
+        }
+
+        /// <summary>
+        /// Character class subtraction yields a set of characters that is the result of excluding the characters in one character class from another character class.
+        /// </summary>
+        /// <param name="baseGroup"></param>
+        /// <param name="excludedGroup"></param>
+        /// <returns>Current instance of <see cref="Pattern"/>.</returns>
+        [Obsolete("This method is obsolete. And it will be removed in future versions.")]
         public Pattern Subtraction(CharacterGroup baseGroup, CharacterGroup excludedGroup)
         {
             //subtractable

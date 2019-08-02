@@ -1,30 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
-    <LangVersion>default</LangVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Alex Parloti</Authors>
-    <Description>Typified help in building regular expressions pattern.</Description>
-    <Copyright>Alex Parloti</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://parloti.github.io/TypeRegex/</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/parloti/TypeRegex/blob/master/icon.svg</PackageIconUrl>
-    <RepositoryUrl>https://github.com/parloti/TypeRegex</RepositoryUrl>
-    <PackageTags>RegEx Regular-Expression FluentRegex VerbalExpressions</PackageTags>
-    <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <FileVersion>0.0.0.2</FileVersion>
-    <Version>0.0.5</Version>
-    <PackageId>TypeRegex</PackageId>
-    <Product>TypeRegex</Product>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard1.0</TargetFramework>
+        <LangVersion>default</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Alex Parloti</Authors>
+        <Description>Typified help in building regular expressions pattern.</Description>
+        <Copyright>Alex Parloti</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://parloti.github.io/TypeRegex/</PackageProjectUrl>
+        <PackageIconUrl>https://github.com/parloti/TypeRegex/blob/master/icon.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/parloti/TypeRegex</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>RegEx Regular-Expression FluentRegex VerbalExpressions</PackageTags>
+        <AssemblyVersion>0.0.0.4</AssemblyVersion>
+        <FileVersion>0.0.0.4</FileVersion>
+        <ReleaseNotes>Bug fix: - Pattern.UnicodeGroup support. - Pattern.Subtraction overload.</ReleaseNotes>
+        <Version>0.0.6</Version>
+        <PackageId>TypeRegex</PackageId>
+        <Product>TypeRegex</Product>
+        <Title>TypeRegex</Title>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Alex\source\repos\TypeRegex\TypeRegex\TypeRegex.xml</DocumentationFile>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DocumentationFile>C:\Users\Alex\source\repos\TypeRegex\TypeRegex\TypeRegex.xml</DocumentationFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
-  </ItemGroup>
+    <ItemGroup>
+        <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+    </ItemGroup>
 
 </Project>

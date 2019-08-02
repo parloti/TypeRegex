@@ -5,7 +5,7 @@ namespace TypeRegex
     /// <summary>
     /// Typified help in building regular expressions pattern.
     /// </summary>
-	public partial class Pattern
+    public partial class Pattern
     {
         #region Character Escapes
 

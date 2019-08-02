@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TypeRegex.CharacterClass" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEgAACAAAABBgAEgAAACAEAARAAAAgCBQAAACQCAAA=</HashCode>
+      <FileName>CharacterClass\CharacterClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TypeRegex.CharacterGroup" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABAAEAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CharacterGroup\CharacterGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TypeRegex.NegativeCharacterGroup" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CharacterGroup\NegativeCharacterGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.NegativeUnicodeBlock" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QqgDAwuBQiXZQTQiiqiQVKBK0HBlUyQOAwiLigYEwJA=</HashCode>
+      <FileName>CharacterGroup\NegativeUnicodeBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.NegativeUnicodeCategory" Collapsed="true">
+    <Position X="2.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAEEgAAAISCAEFAQBBBBQAhAZJRAAACBEAwBSAQ=</HashCode>
+      <FileName>CharacterGroup\NegativeUnicodeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.NegativeUnicodeGroup" Collapsed="true">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>CharacterGroup\NegativeUnicodeGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.PositiveCharacterGroup" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CharacterGroup\PositiveCharacterGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.PositiveUnicodeBlock" Collapsed="true">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QqgDAwuBQiXZQTQiiqiQVKBK0HBlUyQOAwiLigYEwJA=</HashCode>
+      <FileName>CharacterGroup\PositiveUnicodeBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.PositiveUnicodeCategory" Collapsed="true">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAEEgAAAISCAEFAQBBBBQAhAZJRAAACBEAwBSAQ=</HashCode>
+      <FileName>CharacterGroup\PositiveUnicodeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.PositiveUnicodeGroup" Collapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>CharacterGroup\PositiveUnicodeGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.Anchors" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAAAEEEAAAQAAAAAIAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Anchors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.Escapes" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgAIAgAAAAAAAAAAQAIAAABAAAAABCAACAAAA=</HashCode>
+      <FileName>Escapes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.HexadecimalUnicode" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HexadecimalUnicode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.Pattern" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAcgBACkAIAhCiQFyAAABAUwYRAABAgSBwgCACyCAAA=</HashCode>
+      <FileName>Pattern.Anchors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.Stringable" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Stringable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRegex.UnicodeGroup" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>UnicodeGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TypeRegex.ISubtractable" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISubtractable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TypeRegex.IUnicodeBlock" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QqgDAwuBQiXZQTQiiqiQVKBK0HBlUyQOAwiLigYEwJA=</HashCode>
+      <FileName>IUnicodeBlock.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TypeRegex.IUnicodeCategory" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAEEgAAAISCAEFAQBBBBQAhAZJRAAACBEAwBSAQ=</HashCode>
+      <FileName>IUnicodeCategory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TypeRegex.MatchingBehavior" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAgAAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MatchingBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
