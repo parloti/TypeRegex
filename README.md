@@ -2,7 +2,7 @@
 
 Typified help in building regular expressions pattern.
 
-**Typified C Regular Expressions Pattern.**
+**Typified C# Regular Expressions Pattern.**
 
 TypeRegex is a CSharp library that helps to construct regular expressions patterns reducing typos and other common mistakes.
 
